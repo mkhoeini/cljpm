@@ -20,11 +20,18 @@ The ~project.clj~ file is mostly compatible with leiningen. However, the idea
 is that it is only supposed to provide information to other tasks, much like
 ~package.json~ of /npm/, and not to define tasks and etc.
 
+** Dependencies File
+
+Like /bundler/'s approach, dependencies is cleaner to be separated and speciallt treated.
+Dependenies along their asociated environment (dev,test,prod,...) and their source (maven,github,...)
+is better to be defined in another file ~dependencies.clj~ and also will create a ~.lock~ after installing.
+
 ** Standard Subcommands
 
 - ~new~ It is like ~lein new~ to create a new project.
 - ~init~ It is like ~npm init~ to create a default standard ~project.clj~.
 - ~install~ To download dependencies and create a ~.lock~ file.
+- ~run~ It is like ~npm run-script~ to provide a shortcut for simple tasks.
 
 ** Remarks
 
