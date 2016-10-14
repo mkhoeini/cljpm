@@ -1,0 +1,32 @@
+#+title: cljpm
+
+Clojure Project Management
+
+* Vision
+
+** Subcommand Extensibility
+
+Extensible with any global command.
+
+#+begin_src shell
+cljpm <arbitrary command>
+#+end_src
+
+I can include ~arbitrary.clj~ in right places and it will be called.
+
+** Project File
+
+The ~project.clj~ file is mostly compatible with leiningen. However, the idea
+is that it is only supposed to provide information to other tasks, much like
+~package.json~ of /npm/, and not to define tasks and etc.
+
+** Standard Subcommands
+
+- ~new~ It is like ~lein new~ to create a new project.
+- ~init~ It is like ~npm init~ to create a default standard ~project.clj~.
+- ~install~ To download dependencies and create a ~.lock~ file.
+
+** Remarks
+
+- It must be easy to define different repositories for packages, like /maven/, /npm/, /github/, etc.
+- Dependencies must be cached in a global place, but installed to project for easy access.

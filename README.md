@@ -1,2 +1,0 @@
-# cljpm
-Clojure Project Management
