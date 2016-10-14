@@ -30,3 +30,5 @@ is that it is only supposed to provide information to other tasks, much like
 
 - It must be easy to define different repositories for packages, like /maven/, /npm/, /github/, etc.
 - Dependencies must be cached in a global place, but installed to project for easy access.
+- Easy way for passing configs like /rake/ envs.
+- Standard /environment/ treatment for =dev/test/prod/...= for customizing dependencies, config, etc.
